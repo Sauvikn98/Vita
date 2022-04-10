@@ -7,8 +7,8 @@ export const DATABASE_URL =
   process.env.DATABASE_URL || 'mongodb://localhost:27017/Vita';
 
 export const GOOGLE_KEY = {
-  clientID: process.env.GOOGLE_KEY_CLIENTID!,
-  clientSecret: process.env.GOOGLE_KEY_CLIENTSECRET!,
+  clientID: process.env.GOOGLE_KEY_CLIENTID || " ",
+  clientSecret: process.env.GOOGLE_KEY_CLIENTSECRET || " ",
 };
 
 export const PROD: boolean = JSON.parse(process.env.PROD || 'false');
