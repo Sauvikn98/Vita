@@ -6,6 +6,7 @@ import MuiToolbar from '@mui/material/Toolbar';
 import { drawerWidth } from 'utils/settings';
 import { styled } from '@mui/material/styles';
 import Bookings from './Booking';
+import Settings from './Settings'
 
 const Container = styled(Box)(({ theme }) => ({
   flexGrow: 1,
@@ -23,7 +24,7 @@ const renderPage = (page: number) => {
     case 1:
       return <h1>{page}</h1>;
     case 2:
-      return <h1>{page}</h1>;
+      return <Settings />;
     case 3:
       return <h1>{page}</h1>;
     default:
